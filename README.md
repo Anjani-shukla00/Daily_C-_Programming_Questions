@@ -1,4 +1,4 @@
-# Daily_C-_Programming_Questions
+# Daily_C#_Programming_Questions
 My target 100 program upload this repo
 //Write a program addtion of two number.
 using System;
