@@ -1,0 +1,99 @@
+//How to create Students Marksheet Application in C#.
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Enter Your name");
+        string name = Console.ReadLine();
+        Console.WriteLine("Enter your Roll Number");
+        string roll = Console.ReadLine();
+        Console.WriteLine("Enter your class");
+        string standard = Console.ReadLine();
+        Console.WriteLine("Enter your English Marks");  // Fixed typo: "Elgish" → "English"
+        int eng = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Math Marks");
+        int maths = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Science Marks");
+        int science = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter Hindi Marks");
+        int hindi = int.Parse(Console.ReadLine());
+        int obt = eng + maths + science + hindi;
+        int per = obt * 100 / 500;
+        
+        Console.WriteLine("=======MARKSHEET==========");
+        Console.WriteLine("Your name is: {0}", name);
+        Console.WriteLine("Your Roll Number is: {0}", roll);
+        Console.WriteLine("Your Class is: {0}", standard);
+        Console.WriteLine("Your obtained marks are: {0}", obt);
+        Console.WriteLine("Your Percentage is {0}", per);
+        
+        // If else for grade
+        if (per >= 80) {
+            Console.WriteLine("Grade: A-1");
+        }
+        else if (per >= 70) {
+            Console.WriteLine("Grade: B");
+        }
+        else if (per >= 60) {
+            Console.WriteLine("Grade: C");
+        }
+        else if (per >= 50) {
+            Console.WriteLine("Grade: D");
+        }
+        else if (per >= 40) {
+            Console.WriteLine("Grade: E");
+        }
+        else if (per >= 33) {
+            Console.WriteLine("Grade: Pass");
+        }  // ← ADDED MISSING }
+        else {
+            Console.WriteLine("Grade: F(Fail)");
+        }
+        
+        // If else if for Remarks
+        if (per >= 80) {
+            Console.WriteLine("Remarks: Excellent !!");
+        }
+        else if (per >= 70) {
+            Console.WriteLine("Remarks: Very Good !!");
+        }
+        else if (per >= 60) {
+            Console.WriteLine("Remarks: Good !!");
+        }
+        else if (per >= 50) {
+            Console.WriteLine("Remarks: Fair !!");
+        }
+        else if (per >= 40) {
+            Console.WriteLine("Remarks: Poor !!");  // Fixed: "Gemakrs" → "Remarks"
+        }
+        else if (per >= 33) {
+            Console.WriteLine("Remarks: Needs lot of improvement !!");
+        }  // ← ADDED MISSING }
+        else {
+            Console.WriteLine("Remarks: Bring your parents tomorrow !!");
+        }
+        int supply = 0;
+        if(eng < 33){
+            Console.WriteLine("You have supply in English Subject !!");
+            //supply++;
+            
+        }
+        if(maths < 33){
+            Console.WriteLine("You have supply in Maths Subject !!");
+            
+            //supply++;
+        }
+        if(hindi < 33){
+            Console.WriteLine("You have supply in Hindi Subject !!");
+            
+            //supply++;
+        }
+        if(science < 33){
+            Console.WriteLine("You have supply in Science Subject !!");
+            
+            //supply++;
+        }
+        Console.WriteLine("You are failed in {0} subjects", supply);
+        Console.ReadLine();
+    }
+}
