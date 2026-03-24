@@ -1,0 +1,19 @@
+//Write a program to find the Even Odd number in C#.
+using System;
+
+public class EvenOdd
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the number");
+        int number = Convert.ToInt32(Console.ReadLine());
+       // int a = 4;
+        if(number%2 == 0){
+            Console.WriteLine("This is even number");
+        }
+        else{
+            Console.WriteLine("This is odd number");
+        }
+        Console.ReadLine();
+    }
+}
