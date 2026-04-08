@@ -1,0 +1,15 @@
+//Find factorial for given no Program in C#
+using System;
+class Factorial{
+    static void Main(){
+        Console.WriteLine("Enter the number");
+        int number = int.Parse(Console.ReadLine());
+        long factorial = 1;
+        for(int i = 1; i <= number; i++){
+            factorial *= i;
+                  
+        }
+          Console.WriteLine($"Factorial of {number} is {factorial}");
+
+    }
+}
