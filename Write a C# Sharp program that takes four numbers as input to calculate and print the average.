@@ -1,0 +1,30 @@
+
+Write a C# Sharp program that takes four numbers as input to calculate and print the average.
+
+
+using System;
+
+public class Average_Number
+{
+    public static void Main(string[] args)
+    {
+        int number1, number2, number3, number4, total_output;
+
+        Console.WriteLine("Enter the 1st number");
+        number1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the 2nd number");
+        number2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the 3rd number");
+        number3 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the 4th number");
+        number4 = int.Parse(Console.ReadLine());
+
+        total_output = (number1 + number2 + number3 + number4) / 4;
+
+
+      Console.WriteLine("The average is: " + total_output);
+    }
+}
