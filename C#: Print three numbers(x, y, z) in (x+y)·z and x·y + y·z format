@@ -1,1 +1,30 @@
 
+using System;
+
+public class Number_Cal
+{
+    public static void Main(string[] args)
+    {
+        // Declare variables
+        int x, y, z;
+
+        // Taking input
+        Console.WriteLine("Enter the 1st number:");
+        x = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the 2nd number:");
+        y = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the 3rd number:");
+        z = int.Parse(Console.ReadLine());
+
+        // Perform calculations
+        int result1 = (x + y) * z;
+        int result2 = (x * y) + (y * z);
+
+        // Print results
+        Console.WriteLine("\nResults:");
+        Console.WriteLine($"({x}+{y}) * {z} = {result1}");
+        Console.WriteLine($"{x} * {y} + {y} * {z} = {result2}");
+    }
+}
