@@ -1,0 +1,37 @@
+using System;
+public class Repated_Number
+{
+    public static void Main(string[] args)
+    {
+        int number;
+        //taking input
+        Console.WriteLine("Enter the Digit");
+        number = int.Parse(Console.ReadLine());
+        //Part A Print with space
+        Console.WriteLine(number);
+        Console.WriteLine(" ");
+        Console.WriteLine(number);
+        Console.WriteLine(" ");
+        Console.WriteLine(number);
+        Console.WriteLine(" ");
+        Console.WriteLine(number);
+        Console.WriteLine(" ");
+    // Part B Print without space
+        Console.WriteLine(number);
+        Console.WriteLine(number);
+        Console.WriteLine(number);
+        Console.WriteLine(number);
+        Console.WriteLine();
+        // Part C: "number number number number" using {0}
+        Console.WriteLine("{0} {0} {0} {0}", number);
+
+        // Part D: "numbernumbernumbernumber" using {0}
+       Console.WriteLine("{0}{0}{0}{0}", number);
+
+
+    
+    
+    
+    }
+    
+}
